@@ -1,4 +1,134 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #dde; /* light background */
+}
+
+/* centering and styling the header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #003366; /* light purple */
+  padding: 20px 0;
+  box-shadow: 2px 2px 10px #333; /* shadow for header */
+}
+
+header h1 {
+  font-family: 'Sonsie One', cursive;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  margin: 0;
+}
+
+/* navigation bar */
+div[class="nav"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #ffffff; /* white background for nav */
+  box-shadow: 2px 2px 5px #ccc; /* subtle shadow for nav */
+}
+
+div[class="nav"] ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  justify-content: space-around; /* evenly spread out the nav items */
+}
+
+div[class="nav"] li {
+  display: inline-block;
+}
+
+div[class="nav"] a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.search input[type="search"] {
+  font-size: 1.6rem;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search input[type="submit"] {
+  font-size: 1.6rem;
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* layout for main content and sidebar */
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+article {
+  flex: 3;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px 10px #ccc; /* subtle shadow */
+}
+
+.secondary {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px 10px #ccc; /*shadow */
+}
+
+/* styling for headings */
+h2 {
+  font-family: 'Sonsie One', cursive;
+  font-size: 2.5rem;
+  color: #2a2a2a;
+}
+
+/* styling for paragraphs */
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+/* styling for the "Related" section */
+.secondary h2 {
+  font-size: 2rem;
+}
+
+.secondary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.secondary ul li a {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 1.4rem;
+}
+
+.secondary ul li a:hover {
+  text-decoration: underline;
 }
